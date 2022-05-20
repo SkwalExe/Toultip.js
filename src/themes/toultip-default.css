@@ -1,0 +1,18 @@
+.toultip {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 500ms;
+    margin: 10px;
+    max-width: 300px;
+    z-index: 9999;
+    overflow-wrap: break-word;
+    white-space: normal;
+    word-break: break-word;
+    /* Customizable settings */
+    color: white;
+    background-color: #0B1428;
+    padding: 5px 15px;
+    border-radius: 4px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
