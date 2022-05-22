@@ -4,6 +4,10 @@
 
 Create beautiful and customizable tooltips 🗨️ for your website 🎇
 
+# Example
+
+[A simple example of the usage of the library](https://skwalexe.github.io/Toultip.js/example.html) is provided in this repository.
+
 # JsDelivr 
 
 ```html
