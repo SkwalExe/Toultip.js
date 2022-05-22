@@ -2,6 +2,8 @@
 
 If you use toultip.js, we would highly appreciate it if you could include the following informations in your project
 
+This is not a code license, but a way to give credit to the original author.
+
 ## Markdown
 
 ```md
@@ -19,5 +21,3 @@ This project uses [Toultip.js](https://github.com/SkwalExe/Toultip.js), which wa
 ```
 This project uses Toultip.js <github.com/SkwalExe/Toultip.js>, which was released by Léopold Koprivnik Ibghy, @SkwalExe <skwal.net@gmail.com> under the MIT license.
 ```
-
-This is not a code license, but a way to give credit to the original author.
