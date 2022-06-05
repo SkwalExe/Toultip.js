@@ -1,5 +1,5 @@
 const Toultip = {
-  init: (showTimeout = 1000) => {
+  init: (showTimeout = 1000, preventOverflow = true) => {
     this.showTimeout = showTimeout;
     this.timeouts = [];
     this.box = document.createElement('div');
@@ -17,8 +17,15 @@ const Toultip = {
         )
       });
       el.addEventListener('mousemove', e => {
-        this.box.style.left = e.pageX + 'px';
-        this.box.style.top = e.pageY + 'px';
+        if (preventOverflow && e.pageX + this.box.offsetWidth > window.innerWidth)
+          this.box.style.left = window.innerWidth - this.box.offsetWidth - 15 + 'px';
+        else
+          this.box.style.left = e.pageX + 'px';
+
+        if (preventOverflow && e.pageY + this.box.offsetHeight > window.innerHeight)
+          this.box.style.top = window.innerHeight - this.box.offsetHeight - 15 + 'px';
+        else
+          this.box.style.top = e.pageY + 'px';
       })
       el.addEventListener('mouseout', (e) => {
         this.timeouts.forEach(timeout => clearTimeout(timeout));
