@@ -11,7 +11,7 @@ Create beautiful and customizable tooltips 🗨️ for your website 🎇
 # JsDelivr 
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/SkwalExe/Toultip.js@v0.1.0/dist/toultip.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/SkwalExe/Toultip.js@v0.2.0/dist/toultip.min.js"></script>
 ```
 
 # NPM module 
@@ -41,7 +41,7 @@ You can import the library into you website with [JsDelivr](#JsDelivr) or, you c
 **You also need to import the css file to your website**
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toultip@0.1.0/dist/themes/toultip-default.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toultip@0.2.0/dist/themes/toultip-default.min.css">
 ```
 
 # Your first tooltip 💫
@@ -57,10 +57,12 @@ To add a tooltip to an element of your website, just add a `toultip` attribute t
 At the end of the body, you must run
 
 ```js
-Toultip.init();
+Toultip.init(1000, true);
 ```
 
-This function can take one parameter which is the timeout in milliseconds before showing the tooltip.
+This function can take two optional parameters:
+- `1000` is timeout in milliseconds before showing the tooltip.
+- `true` to prevent the tooltip from overflowing the screen.
 
 # final
 
