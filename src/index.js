@@ -17,13 +17,13 @@ const Toultip = {
         )
       });
       el.addEventListener('mousemove', e => {
-        if (preventOverflow && e.pageX + this.box.offsetWidth > window.innerWidth)
-          this.box.style.left = window.innerWidth - this.box.offsetWidth - 15 + 'px';
+        if (preventOverflow && e.pageX + this.box.offsetWidth + 15 > document.body.scrollWidth)
+          this.box.style.left = document.body.scrollWidth - this.box.offsetWidth - 15 + 'px';
         else
           this.box.style.left = e.pageX + 'px';
 
-        if (preventOverflow && e.pageY + this.box.offsetHeight > window.innerHeight)
-          this.box.style.top = window.innerHeight - this.box.offsetHeight - 15 + 'px';
+        if (preventOverflow && e.pageY + this.box.offsetHeight + 15 > document.body.scrollHeight)
+          this.box.style.top = document.body.scrollHeight - this.box.offsetHeight - 15 + 'px';
         else
           this.box.style.top = e.pageY + 'px';
       })

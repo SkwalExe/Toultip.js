@@ -1,5 +1,5 @@
 .toultip {
-    position: fixed;
+    position: absolute;
     opacity: 0;
     pointer-events: none;
     transition: opacity 500ms;
