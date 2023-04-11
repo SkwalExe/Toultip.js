@@ -11,7 +11,7 @@ Create beautiful and customizable tooltips 🗨️ for your website 🎇
 # JsDelivr 
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/SkwalExe/Toultip.js@v0.2.0/dist/toultip.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/SkwalExe/Toultip.js@v0.2.1/dist/toultip.min.js"></script>
 ```
 
 # NPM module 
@@ -41,7 +41,7 @@ You can import the library into you website with [JsDelivr](#JsDelivr) or, you c
 **You also need to import the css file to your website**
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toultip@0.2.0/dist/themes/toultip-default.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toultip@0.2.1/dist/themes/toultip-default.min.css">
 ```
 
 # Your first tooltip 💫

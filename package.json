@@ -1,6 +1,6 @@
 {
   "name": "toultip",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Create beautiful and customizable tooltips for your website",
   "main": "src/index.js",
   "scripts": {
